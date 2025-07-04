@@ -3,12 +3,12 @@ misplugins [![Build Status](https://img.shields.io/github/actions/workflow/statu
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/Santiago22022?label=GitHub%20Sponsors)](https://github.com/sponsors/Santiago22022)
 
 ===========
-Colección de plugins personalizados para Minecraft/otro entorno, desarrollados para ampliar y mejorar diversas funcionalidades del servidor.
+Colección de plugins personalizados para Minecraft, desarrollados para ampliar y mejorar diversas funcionalidades del servidor.
 
 ---
 
 **Soporte y discusión del proyecto:**
-- [Nuestro Discord](https://discord.gg/tulink)
+- [Nuestro Discord aun no disponible]()
 - [GitHub Issues](https://github.com/Santiago22022/misplugins/issues)
 
 ## 📥 Cómo usar (Administradores de servidores)
@@ -20,9 +20,9 @@ Cada plugin está dentro de su propio directorio. Para instalarlo:
 3. Reinicia el servidor.
 
 > Plugins disponibles:
-> - `ExamplePlugin`: añade comandos personalizados.
-> - `ExtraFeatures`: mejora la experiencia del juego.
-> - *(añade más aquí)*
+> - `NationTech (aun en desarrollo)`: Añade un arbol de tecnologias.
+> - `FoliaBans (aun en desarrollo`: añade comandos para banear.
+> - *(Proximamente mas)*
 
 Documentación detallada: *(puedes agregar un enlace aquí cuando tengas una wiki o documentación)*
 
@@ -34,10 +34,4 @@ Documentación detallada: *(puedes agregar un enlace aquí cuando tengas una wik
 - Revisa el código fuente para entender la estructura básica.
 - Si quieres contribuir, revisa [CONTRIBUTING.md](CONTRIBUTING.md) *(créalo si aún no existe)*.
 
-### Repositorio Maven (cuando apliques)
-
-```xml
-<repository>
-    <id>misplugins</id>
-    <url>https://maven.santiagoserver.dev/repository/public/</url>
-</repository>
+### Repositorio Maven aun no disponible.
