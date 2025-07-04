@@ -1,0 +1,93 @@
+# Archivo: config.yml (ACTUALIZADO)
+# Ubicación: src/main/resources/config.yml
+# FoliaBans v0.3.0 - Configuración Avanzada
+# ========================================
+
+settings:
+  # Idioma del plugin (archivos en /lang/)
+  language: "es_ES"
+
+  # Nombre del servidor para mensajes
+  server-name: "Servidor"
+
+  # Razón por defecto si no se especifica una
+  default-reason: "Violación de las reglas"
+
+  # Diferencia de tiempo del servidor (en horas)
+  time-difference: 0
+
+  # Habilitar mensajes detallados en consola
+  detailed-messages: true
+
+  # Bloquear el servidor en caso de error de base de datos
+  lockdown-on-error: false
+
+# Almacenamiento de datos
+storage:
+  method: "sqlite" # sqlite, mysql
+
+  sqlite:
+    file: "foliabans.db"
+
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "foliabans"
+    username: "root"
+    password: "password"
+    pool-size: 10
+    properties:
+      useSSL: false
+      autoReconnect: true
+      characterEncoding: utf8
+
+# Sincronización Redis (para redes)
+redis:
+  enabled: false
+  host: "localhost"
+  port: 6379
+  password: ""
+  database: 0
+  channel: "FoliaBansSync"
+
+# Comandos bloqueados para jugadores muteados
+mute-commands:
+  - "me"
+  - "say"
+  - "tell"
+  - "msg"
+  - "whisper"
+  - "reply"
+
+# Configuración de permisos
+permissions:
+  # Jugadores exentos de castigos
+  exempt:
+    enabled: true
+    permission: "foliabans.exempt"
+
+  # Bypass para ciertos comandos
+  bypass:
+    mute: "foliabans.bypass.mute"
+    ban: "foliabans.bypass.ban"
+
+# Limpieza automática
+cleanup:
+  # Limpiar castigos expirados automáticamente
+  auto-cleanup: true
+
+  # Intervalo en minutos
+  interval: 30
+
+  # Limpiar historial antiguo (días, 0 = deshabilitado)
+  history-cleanup-days: 0
+
+# Integraciones
+integrations:
+  # Soporte para DiscordSRV
+  discord:
+    enabled: false
+    webhook-url: ""
+
+  # Métricas bStats
+  metrics: true

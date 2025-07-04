@@ -1,0 +1,83 @@
+# Archivo: es_ES.yml (ACTUALIZADO)
+# Ubicación: src/main/resources/lang/es_ES.yml
+# FoliaBans - Mensajes en Español
+# ==============================
+
+General:
+  Prefix: "&c&lFoliaBans &8&l»"
+  NoPerms: "&cNo tienes permisos para hacer esto!"
+  PlayerNotFound: "&cJugador no encontrado: %PLAYER%"
+  PlayerOffline: "&cEl jugador %PLAYER% no está conectado."
+  InvalidTime: "&cTiempo inválido: %TIME%"
+  DatabaseError: "&cError en la base de datos. Contacta a un administrador."
+  CommandUsage: "&cUso: %USAGE%"
+
+# Comandos de Ban
+Ban:
+  Usage: "&cUso: /ban <jugador> [razón]"
+  Success: "&a%PLAYER% ha sido baneado por %REASON%"
+  AlreadyBanned: "&c%PLAYER% ya está baneado."
+  Exempt: "&cNo puedes banear a %PLAYER%"
+  Layout:
+    - "&c&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    - ""
+    - "&f                    &c&lHAS SIDO BANEADO"
+    - ""
+    - "&7Razón: &f%REASON%"
+    - "&7Baneado por: &f%OPERATOR%"
+    - "&7Duración: &f%DURATION%"
+    - ""
+    - "&7Si crees que esto es un error, contacta a los administradores."
+    - ""
+    - "&c&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  Notification:
+    - "&c%PLAYER% &7ha sido baneado por &e%OPERATOR%"
+    - "&7Razón: &f%REASON%"
+
+# Comandos de TempBan
+TempBan:
+  Usage: "&cUso: /tempban <jugador> <tiempo> [razón]"
+  Success: "&a%PLAYER% ha sido baneado temporalmente por %DURATION%"
+
+# Comandos de Unban
+Unban:
+  Usage: "&cUso: /unban <jugador>"
+  Success: "&a%PLAYER% ha sido desbaneado."
+  NotBanned: "&c%PLAYER% no está baneado."
+
+# Comandos de Mute
+Mute:
+  Usage: "&cUso: /mute <jugador> [razón]"
+  Success: "&a%PLAYER% ha sido silenciado por %REASON%"
+  AlreadyMuted: "&c%PLAYER% ya está silenciado."
+  Layout:
+    - "&c&lEstás silenciado!"
+    - "&7Razón: &f%REASON%"
+    - "&7Duración: &f%DURATION%"
+
+# Historial
+History:
+  Usage: "&cUso: /history <jugador>"
+  Header: "&7Historial de &c%PLAYER%&7:"
+  Entry: "&7%DATE% &8- &c%TYPE% &8- &f%REASON% &7por &e%OPERATOR%"
+  NoHistory: "&7%PLAYER% no tiene historial de castigos."
+
+# Kick
+Kick:
+  Usage: "&cUso: /kick <jugador> [razón]"
+  Success: "&a%PLAYER% ha sido expulsado del servidor."
+  Message: "&cHas sido expulsado del servidor.\n&7Razón: &f%REASON%"
+
+# Tiempo
+Time:
+  Permanent: "Permanente"
+  Days: "%DAYS% día(s)"
+  Hours: "%HOURS% hora(s)"
+  Minutes: "%MINUTES% minuto(s)"
+  Seconds: "%SECONDS% segundo(s)"
+
+# Errores
+Error:
+  InvalidFormat: "&cFormato inválido."
+  PlayerRequired: "&cEste comando solo puede ser usado por jugadores."
+  ConsoleRequired: "&cEste comando solo puede ser usado desde consola."

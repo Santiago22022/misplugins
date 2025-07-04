@@ -1,0 +1,83 @@
+# Archivo: en_US.yml
+# Ubicación: src/main/resources/lang/en_US.yml
+# FoliaBans - English Messages
+# ===========================
+
+General:
+  Prefix: "&c&lFoliaBans &8&l»"
+  NoPerms: "&cYou don't have permission to do this!"
+  PlayerNotFound: "&cPlayer not found: %PLAYER%"
+  PlayerOffline: "&cPlayer %PLAYER% is not online."
+  InvalidTime: "&cInvalid time: %TIME%"
+  DatabaseError: "&cDatabase error. Contact an administrator."
+  CommandUsage: "&cUsage: %USAGE%"
+
+# Ban Commands
+Ban:
+  Usage: "&cUsage: /ban <player> [reason]"
+  Success: "&a%PLAYER% has been banned for %REASON%"
+  AlreadyBanned: "&c%PLAYER% is already banned."
+  Exempt: "&cYou cannot ban %PLAYER%"
+  Layout:
+    - "&c&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    - ""
+    - "&f                    &c&lYOU HAVE BEEN BANNED"
+    - ""
+    - "&7Reason: &f%REASON%"
+    - "&7Banned by: &f%OPERATOR%"
+    - "&7Duration: &f%DURATION%"
+    - ""
+    - "&7If you think this is an error, contact the administrators."
+    - ""
+    - "&c&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  Notification:
+    - "&c%PLAYER% &7has been banned by &e%OPERATOR%"
+    - "&7Reason: &f%REASON%"
+
+# TempBan Commands
+TempBan:
+  Usage: "&cUsage: /tempban <player> <time> [reason]"
+  Success: "&a%PLAYER% has been temporarily banned for %DURATION%"
+
+# Unban Commands
+Unban:
+  Usage: "&cUsage: /unban <player>"
+  Success: "&a%PLAYER% has been unbanned."
+  NotBanned: "&c%PLAYER% is not banned."
+
+# Mute Commands
+Mute:
+  Usage: "&cUsage: /mute <player> [reason]"
+  Success: "&a%PLAYER% has been muted for %REASON%"
+  AlreadyMuted: "&c%PLAYER% is already muted."
+  Layout:
+    - "&c&lYou are muted!"
+    - "&7Reason: &f%REASON%"
+    - "&7Duration: &f%DURATION%"
+
+# History
+History:
+  Usage: "&cUsage: /history <player>"
+  Header: "&7History of &c%PLAYER%&7:"
+  Entry: "&7%DATE% &8- &c%TYPE% &8- &f%REASON% &7by &e%OPERATOR%"
+  NoHistory: "&7%PLAYER% has no punishment history."
+
+# Kick
+Kick:
+  Usage: "&cUsage: /kick <player> [reason]"
+  Success: "&a%PLAYER% has been kicked from the server."
+  Message: "&cYou have been kicked from the server.\n&7Reason: &f%REASON%"
+
+# Time
+Time:
+  Permanent: "Permanent"
+  Days: "%DAYS% day(s)"
+  Hours: "%HOURS% hour(s)"
+  Minutes: "%MINUTES% minute(s)"
+  Seconds: "%SECONDS% second(s)"
+
+# Errors
+Error:
+  InvalidFormat: "&cInvalid format."
+  PlayerRequired: "&cThis command can only be used by players."
+  ConsoleRequired: "&cThis command can only be used from console."

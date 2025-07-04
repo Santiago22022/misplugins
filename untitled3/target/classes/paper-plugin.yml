@@ -1,0 +1,11 @@
+name: FoliaBans
+main: com.tudominio.foliabans.FoliaBans
+version: ${project.version}
+api-version: '1.20'
+folia-supported: true
+author: Santiiaago
+description: Un plugin de baneos moderno y eficiente para Folia y Paper. (No recomendado para uso mayor como una network, no me hago responsable por cualquier problema con la network vinculado al plugin.)
+softdepend:
+  - ProtocolLib
+libraries:
+  - org.xerial:sqlite-jdbc:3.46.0.0

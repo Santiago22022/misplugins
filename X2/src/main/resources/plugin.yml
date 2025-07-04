@@ -1,0 +1,12 @@
+# El nombre de tu plugin. Es correcto.
+main: me.generator.x2.X2
+version : 0.1
+name: X2
+author: Poelsk
+api-version : 1.21
+
+commands:
+  miprimerplugin:
+    description: Comando principal del pl
+    aliases:
+     -mp
