@@ -1,0 +1,7 @@
+com\tu\servidor\vigilante\modules\combat\KillAuraCheck.class
+com\tu\servidor\vigilante\modules\ICheck.class
+com\tu\servidor\vigilante\modules\CheckManager.class
+com\tu\servidor\vigilante\modules\movement\FlyCheck.class
+com\tu\servidor\vigilante\util\ViolationManager.class
+com\tu\servidor\vigilante\VigilanteAntiCheat.class
+com\tu\servidor\vigilante\modules\movement\NoFallCheck.class

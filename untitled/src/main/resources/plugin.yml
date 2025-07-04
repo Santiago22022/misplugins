@@ -1,0 +1,13 @@
+name: VigilanteAntiCheat
+version: 0.2-alpha
+main: com.tu.servidor.vigilante.VigilanteAntiCheat
+api-version: 1.18
+author: [Santiago]
+description: Funciona?????
+permissions:
+  vigilante.notify:
+    description: Recibe notificaciones de hacks detectados.
+    default: op
+  vigilante.bypass:
+    description: Evita ser detectado por el anticheat.
+    default: op

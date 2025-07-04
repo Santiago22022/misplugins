@@ -1,0 +1,27 @@
+# El título del menú. Soporta formato MiniMessage.
+menu_title: "<dark_blue>Árbol de Tecnologías"
+# El tamaño del inventario. Debe ser un múltiplo de 9 (ej. 9, 18, 27, 36, 45, 54).
+size: 54
+
+# Definición de los ítems que aparecerán en el menú.
+items:
+  # Este es un ítem decorativo. Lo usaremos para el fondo.
+  relleno:
+    material: 'GRAY_STAINED_GLASS_PANE'
+    display_name: '" "' # Un nombre vacío para que no aparezca nada.
+    # No definimos una ranura, así que lo usaremos como fondo por defecto.
+
+  # Este es un ítem de tecnología. Lo vinculamos a nuestro archivo de tecnología.
+  agricultura:
+    # Vincula este ítem del menú con la tecnología definida en /techs/
+    tech_id: 'agricultura_basica'
+    # La ranura exacta donde aparecerá este ítem en el inventario (0-53).
+    slot: 10
+
+  # Puedes añadir más tecnologías aquí, cada una en su propia ranura.
+  # mineria:
+  #   tech_id: 'mineria_avanzada'
+  #   slot: 12
+  # ganaderia:
+  #   tech_id: 'ganaderia_animal'
+  #   slot: 14

@@ -1,0 +1,26 @@
+name: NationTech
+version: 2.0
+main: com.tunacion.nationtech.NationTech
+api-version: 1.20
+author: [WOE_DEVS]
+description: Un sistema de árbol de tecnologías para naciones de Towny.
+depend: [Towny]
+
+commands:
+  nationtech:
+    aliases: [nt, tech]
+    description: Comando principal de NationTech.
+  ntecha:
+    aliases: [nta]
+    description: Comandos de administración para NationTech.
+
+permissions:
+  nationtech.admin:
+    description: Permiso base para todos los comandos de admin.
+    children:
+      nationtech.admin.reload: true
+      nationtech.admin.activate: true
+  nationtech.admin.reload:
+    description: Permite usar /nta reload.
+  nationtech.admin.activate:
+    description: Permite usar /nta activate.

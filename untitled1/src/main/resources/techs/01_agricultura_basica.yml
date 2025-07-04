@@ -1,0 +1,13 @@
+tech:
+  id: agricultura_basica
+  name: "&aAgricultura Básica"
+  description:
+    - "&7Permite a los miembros de la nación"
+    - "&7crear granjas más eficientes."
+  material: WHEAT
+  slot: 10
+  # Nueva sección para recompensas basadas en comandos.
+  # %leader% será reemplazado por el nombre del rey de la nación.
+  reward-commands:
+    - "minecraft:give %leader% diamond 10"
+    - "tell %leader% &a¡Tu nación ha desbloqueado la Agricultura Básica y has recibido 10 diamantes como recompensa!"
