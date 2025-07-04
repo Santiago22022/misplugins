@@ -1,0 +1,15 @@
+  name: MiPrimerPlugin
+  version: 1.0
+  main: plugin.miprimerplugin.MiPrimerPlugin
+  api-version: '1.20'
+  author: Pepito
+  commands:
+    dado:
+      description:  lanza un dado virtual con caracteristicas especficias
+      usage: "§cUso incorrecto. Escribe: /<command> [numero_de_caras]"
+      aliases :
+          - d
+          - roll
+          - lanzar
+permissions: miprimerplugin.comando.dado
+permission-message: "permission-message: §c¡No tienes permiso para usar los dados mágicos!"

@@ -1,0 +1,13 @@
+name : CommandMaster
+version : '0.1-ALPHA'
+main : org.command.commandMaster.CommandMaster
+api-version : '1.20'
+load : STARTUP
+authors : [ juanitoperez ]
+description : Commandmasterxd
+
+commands:
+  CommandMaster:
+    description: no se
+    aliases:
+      - cm

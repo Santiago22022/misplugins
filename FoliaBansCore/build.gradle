@@ -1,0 +1,47 @@
+plugins {
+    id("java")
+}
+
+group = "com.tudominio"
+version = "0.1-CORE"
+
+// Define la versión de Java para el proyecto
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(21))
+}
+
+repositories {
+    // Le dice a Gradle que busque en tu carpeta local de Maven (.m2)
+    mavenLocal()
+
+    // Repositorios de internet
+    mavenCentral()
+    maven {
+        name = "papermc-repo"
+        url = uri("https://repo.papermc.io/repository/maven-public/")
+    }
+    maven {
+        name = "dmulloy2-repo"
+        url = uri("https://repo.dmulloy2.net/repository/public/")
+    }
+}
+
+dependencies {
+    // API de Paper/Folia (proporcionada por el servidor)
+    compileOnly("io.papermc.paper:paper-api:1.20.6-R0.1-SNAPSHOT")
+
+    // ProtocolLib (proporcionada por el servidor)
+    compileOnly("com.comphenix.protocol:ProtocolLib:5.2.0")
+
+    // --- ¡AQUÍ ESTÁ LA CORRECCIÓN MÁS IMPORTANTE! ---
+    // Ahora busca la versión exacta de tu plugin principal.
+    compileOnly("com.tudominio:FoliaBans:0.0.1-BETA-EXPERIMENTAL")
+}
+
+tasks {
+    processResources {
+        filesMatching("paper-plugin.yml") {
+            expand("version" to project.version)
+        }
+    }
+}

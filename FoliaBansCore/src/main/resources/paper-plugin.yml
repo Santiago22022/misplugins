@@ -1,0 +1,11 @@
+name: FoliaBans-Core
+main: com.tudominio.foliabans.core.FoliaBansCore
+version: ${version} # Gradle reemplazará esto con la versión del build.gradle.kts
+api-version: '1.20'
+folia-supported: true
+author: Santiiaago
+
+# Dependencias OBLIGATORIAS: El Core no funcionará sin estos plugins.
+depend:
+  - ProtocolLib
+  - FoliaBans

@@ -1,0 +1,5 @@
+  name: MiPrimerPlugin
+  version: 1.0
+  main: plugin.miprimerplugin.MiPrimerPlugin
+  api-version: '1.20'
+  author: Pepito
